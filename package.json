@@ -1,0 +1,34 @@
+{
+  "name": "seneca-composer-store",
+  "version": "1.0.0-build.1542104848",
+  "description": "",
+  "main": "/lib/client.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "composer-client": "0.20.4",
+    "composer-common": "0.20.4",
+    "fs": "0.0.1-security",
+    "node-cache": "4.1.1",
+    "seneca": "^3.7.0",
+    "seneca-basic": "^0.6.0",
+    "seneca-entity": "^2.3.0",
+    "should": "^13.2.3",
+    "util": "^0.11.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "composer-admin": "0.20.0",
+    "composer-connector-embedded": "0.20.0",
+    "eslint": "3.17.1",
+    "jsdoc": "3.5.5",
+    "license-check-and-add": "2.3.1",
+    "mocha": "^3.5.3",
+    "sinon": "2.3.8",
+    "sleep-promise": "2.0.0"
+  }
+}
