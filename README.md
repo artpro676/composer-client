@@ -10,13 +10,13 @@ Actually this library is under development, but you can use some features right 
 
 Read how to setup and use [Hyperledger Composer](https://hyperledger.github.io/composer/latest/installing/installing-index)
 
-### Installation
+## Installation
 
 ```
 npm install composer-client-util //Sorry, not published yet
 ```
 
-### Usage  
+## Usage  
   
 This library doesn`t manage any cards, but just applies it as parameter and tries to find it on local filesystem.
 Read more about that  (here)[https://hyperledger.github.io/composer/latest/business-network/cloud-wallets]
@@ -31,7 +31,7 @@ There four major types of registries in Hyperledger :
 You don't have to specify which registry use for any operations, this library automaticly do that for you, 
 just insert full path of class defined in bussiness network. `Example: 'org.example.basic.SampleAsset'`
 
-#### Connect
+### Connect
 
 ##### Note. Here `asset` means  `asset` or `participant`.
 
@@ -48,7 +48,7 @@ const client = new ComposerClientUtil({
 
 ```
 
-#### Get list of assets from registry
+### Get list of assets from registry
 
 ```
 
@@ -66,13 +66,13 @@ const options = {
  // Here first parameter always should be string full name of class
 ```
 
-#### Get one by id
+### Get one by id
 
 ```
  const result = await client.findById('org.example.basic.SampleAsset', '1');
 ```
 
-#### Add asset to registry
+### Add asset to registry
 
 ```
  await client.create('org.example.basic.SampleAsset', {
@@ -82,13 +82,13 @@ const options = {
  });
 ```
 
-#### Update asset by id
+### Update asset by id
 
 ```
 await client.update('org.example.basic.SampleAsset', '1', {value: 'New asset value !!!'});
 ```
 
-#### Transaction
+### Transaction
 
 ```
 
@@ -101,12 +101,12 @@ const txInput = {
  const result = await client.submitTransaction(txInput, options);
 ```
 
-#### Queries
+### Queries
 
 ```
 Not tested yet ....
 ```
 
-### Contributing
+## Contributing
 
 You may fork this lib or create pull requests.
