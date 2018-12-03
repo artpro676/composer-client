@@ -1,12 +1,19 @@
 {
-  "name": "seneca-composer-store",
-  "version": "1.0.0-build.1542104848",
-  "description": "",
+  "name": "composer-client-util",
+  "version": "0.0.1",
+  "description": "Library for convenient working with Hyperledger Composer",
   "main": "/lib/client.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha ./test/*.test.js"
   },
-  "author": "",
+  "author":  {
+    "name": "ArtUr.K",
+    "email": "elarturiokowalski@gmail.com"
+  },
+  "repository": "https://github.com/artpro676/composer-client",
+  "engines": {
+    "node": ">=8.11"
+  },
   "license": "ISC",
   "dependencies": {
     "composer-client": "0.20.4",
